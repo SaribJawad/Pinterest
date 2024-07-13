@@ -15,7 +15,7 @@
           alt="pin logo"
           class="img1"
         />
-        <p class="header">Login to see more</p>
+        <p class="header">Login account to see more</p>
 
         <form action="/login" method="post">
           <input
@@ -31,6 +31,10 @@
             placeholder="Password"
             class="detail"
           />
+          <% if(error.length > 0) { %>
+          <p class="error"><%= error %> !</p>
+          <% } %>
+
           <input type="submit" class="btn int" value="Login" />
         </form>
 
