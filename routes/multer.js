@@ -4,11 +4,11 @@ const path = require("path");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "./public/images/uploads"); // destination folder for uploads
+    cb(null, "./public/images/uploads");
   },
   filename: function (req, file, cb) {
-    const uniqueFilename = uuidv4(); //generating a unique filename using UUID
-    cb(null, uniqueFilename + path.extname(file.originalname)); // use the unique filename for the uploaded file
+    const unique = uuidv4();
+    cb(null, unique + path.extname(file.originalname));
   },
 });
 

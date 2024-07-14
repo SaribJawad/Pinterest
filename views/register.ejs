@@ -9,9 +9,9 @@
     <h1
       class="mb-10 text-3xl text-center font-semibold text-zinc-700 tracking-tight capitalize leading-none"
     >
-      Welcome to pinterest
+      Create new account
     </h1>
-    <form action="/login" method="post">
+    <form action="/register" method="post">
       <input
         class="block w-full px-3 py-2 mt-2 border-2 rounded-md"
         type="text"
@@ -20,17 +20,21 @@
       />
       <input
         class="block w-full px-3 py-2 mt-2 border-2 rounded-md"
+        type="email"
+        name="email"
+        placeholder="email"
+      />
+      <input
+        class="block w-full px-3 py-2 mt-2 border-2 rounded-md"
         type="password"
         name="password"
         placeholder="password"
       />
-      <a class="mt-2 font-semibold text-xs text-zinc-500 block" href="#"
-        >Forgot password?</a
-      >
+
       <input
         class="block w-full px-3 py-2 bg-red-600 text-white rounded-full mt-5 border-2 rounded-full cursor-pointer"
         type="submit"
-        value="Login"
+        value="Create Account"
       />
       <p
         class="text-xs font-semibold text-zinc-500 mt-7 mx-auto text-center w-3/4"
@@ -41,8 +45,8 @@
     </form>
     <a
       class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center"
-      href="/register"
-      >Dont have an account?</a
+      href="/"
+      >Already a member? Log in</a
     >
   </div>
 </div>
