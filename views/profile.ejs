@@ -14,9 +14,9 @@
     <div class="relative">
       <span
         id="uploadicon"
-        class="w-8 h-8 cursor-pointer absolute bottom-0 right-0 rounded-full flex items-center justify-center bg-zinc-200"
+        class="w-8 h-8 cursor-pointer absolute bottom-0 right-0 rounded-full flex items-center justify-center bg-red-600"
       >
-        <i class="ri-pencil-fill text-zinc-800"></i>
+        <i class="ri-pencil-fill text-zinc-200"></i>
       </span>
       <div class="w-32 h-32 bg-zinc-200 rounded-full overflow-hidden">
         <img
@@ -26,8 +26,8 @@
         />
       </div>
     </div>
-    <h1 class="text-3xl font-semibold mt-5"><%= user.username %></h1>
-    <h3 class="text-md"><%= user.email %></h3>
+    <h1 class="text-3xl font-semibold mt-5">@<%= user.username %></h1>
+    <h3 class="text-md text-zinc-400"><%= user.email %></h3>
     <a
       href="/edit"
       class="mt-2 px-7 py-2 bg-zinc-700 rounded-full text-xs font-semibold"

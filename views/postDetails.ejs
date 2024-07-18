@@ -1,0 +1,13 @@
+<% include ./partials/header.ejs %>
+<div
+  class="w-full min-h-screen bg-zinc-800 text-white flex items-center justify-center"
+>
+  <div class="w-[700px] flex flex-col items-center gap-2">
+    <h1 class="text-4xl capitalize"><%= post.title %></h1>
+    <p class="text-sm text-zinc-400"><%= post.description %></p>
+    <img src="/images/uploads/<%= post.image %>" alt="<%= post.title %>" />
+    <p class="text-sm text-zinc-500">Posted by: <%= post.user.username %></p>
+  </div>
+  
+</div>
+<% include ./partials/footer.ejs %>
